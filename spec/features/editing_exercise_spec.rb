@@ -7,7 +7,7 @@ RSpec.feature "Editing Exercises" do
 
     @owner_exer = @owner.exercises.create!(duration_in_min: 45, 
                                     workout: "Cardio Activity", 
-                                    workout_date: "2016-01-22")
+                                    workout_date: Date.today)
     login_as(@owner)
   end
 
