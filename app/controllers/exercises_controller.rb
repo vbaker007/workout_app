@@ -31,4 +31,8 @@ class ExercisesController < ApplicationController
     def exercise_params
       params.require(:exercise).permit(:duration_in_min, :workout, :workout_date, :user_id)
     end
+
+    def set_exercise
+      @exercise = current_user.exercises.find(params[:id])
+    end
 end
