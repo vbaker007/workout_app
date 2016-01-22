@@ -10,7 +10,7 @@ class ExercisesController < ApplicationController
   end
 
   def create
-    @exercise = current_user.exercise.new(exercise_params)
+    @exercise = current_user.exercises.new(exercise_params)
 
     if @exercise.save
       flash[:success] = "Exercise has been created"
@@ -20,6 +20,10 @@ class ExercisesController < ApplicationController
       flash[:danger] = "Exercise has not been created"
       render :new
     end
+  end
+
+  def show
+
   end
 
   private
