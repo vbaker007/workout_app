@@ -7,6 +7,7 @@ gem 'rails', '4.2.4'
 gem 'bootstrap-sass', '~>3.3.4.1'
 gem 'autoprefixer-rails', '~>5.2.0'
 gem 'devise'
+gem 'jquery-ui-rails', '5.0.5'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
