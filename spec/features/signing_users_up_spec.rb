@@ -13,5 +13,7 @@ RSpec.feature "Users signup" do
     click_button "Sign up"
 
     expect(page).to have_content("You have signed up successfully.")
+    visit "/"
+    expect(page).to have_content("John Doe")
   end
 end
